@@ -15490,3 +15490,15 @@ function danceTiles(tiles){
     });
     
 }
+
+let icon = document.getElementById("icon");
+
+icon.onclick = function(){
+  document.body.classList.toggle("white-theme");
+  if(document.body.classList.contains("white-theme")){
+    icon.src = "night.png"
+  }
+  else{
+    icon.src = "sun.png"
+  }
+}
